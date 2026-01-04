@@ -1,0 +1,48 @@
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+@font-face {
+  font-family: 'airstream';
+  src: url('https://static.wfonts.com/data/2015/12/29/airstream/AirstreamNF.woff') format('woff');
+  font-display: swap;
+}
+.main {
+    position: static;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    border-radius: 50px;
+    border: 20px 20px 5px rgba(255, 255, 255, 0.356), 10px 10px 5px rgba(150, 213, 255, 0.356);
+    height: 2000px;
+}
+.header {
+    align-self: center;
+    align-content: center;
+}
+#title {
+    color: white;
+    font-family: airstream;
+    font-size: 10rem;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem rgb(137, 99, 240), 0.4rem 0.4rem rgb(107, 63, 226);
+    transition: text-shadow 0.2s ease-out;
+}
+#title:hover {
+    text-shadow: 0.2rem 0.2rem rgb(137, 99, 240), 0.4rem 0.4rem rgb(107, 63, 226), 0.7rem 0.7rem rgb(133, 98, 230);
+}
+.entry {
+    height: 1000px;
+    width: 500px;
+    background-color: #1f1f1f;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.356);
+    transition: box-shadow 0.5s ease-out;
+}
+.entry:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.356), 5px 5px rgba(255, 255, 255, 0.308) inset;
+}
