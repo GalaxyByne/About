@@ -45,11 +45,11 @@ body {
 }
 .entry {
     height: 1000px;
-    width: 30%;
+    width: 31%;
     background-color: #1f1f1f;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.356);
     transition: box-shadow 0.3s ease-out;
 }
 .entry:hover {
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.356), 3px 3px rgb(255, 255, 255) inset, 10px 10px 10px rgb(107, 63, 226) inset;
+    box-shadow: 3px 3px rgb(255, 255, 255), 10px 10px 10px rgb(107, 63, 226);
 }
