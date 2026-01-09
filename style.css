@@ -38,17 +38,17 @@ body {
     font-family: 'Airstream';
     font-size: 12vw;
     text-align: center;
-    text-shadow: 0.2rem 0.2rem rgb(137, 99, 240), 0.4rem 0.4rem rgb(107, 63, 226);
+    text-shadow: 0.2vw 0.2vw rgb(137, 99, 240), 0.4vw 0.4vw rgb(107, 63, 226), 0.4vw 0.4vw rgb(133, 98, 230);
     cursor: default;
     transition: text-shadow 0.4s ease-out;
 }
 #title:hover {
-    text-shadow: 0.2rem 0.2rem rgb(137, 99, 240), 0.4rem 0.4rem rgb(107, 63, 226), 0.8rem 0.8rem rgb(133, 98, 230);
+    text-shadow: 0.2vw 0.2vw rgb(137, 99, 240), 0.4vw 0.4vw rgb(107, 63, 226), 0.7vw 0.7vw rgb(133, 98, 230);
 }
 .divider {
     height: 20%;
     width: auto;
-    margin-block-end: 2%;
+    margin-block-end: 1.5vw;
     padding: 1%;
     border-radius: 5px;
     background-color: #1f1f1f;
@@ -64,19 +64,19 @@ body {
 }
 .content {
     display: flex;
+    gap: 1.5vw;
     flex-direction: row;
     justify-content: space-between;
 }
 .column {
-    width: 33.333%;
+    flex: 1;
     height: auto;
 }
 .entry {
-    height: 400px;
+    height: fit-content;
     width: auto;
-    margin-inline: 3%;
-    margin-block-end: 6%;
-    padding: 3%;
+    margin-block-end: 1.5vw;
+    padding: 1vw;
     border-radius: 5px;
     background-color: #1f1f1f;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.356);
@@ -88,15 +88,14 @@ body {
 .entry_heading {
     position: relative;
     width: fit-content;
-    margin: 1.5%;
-    padding-bottom: 1%;
+    padding-bottom: 5px;
     border-bottom: solid 5px rgb(107, 63, 226);
 }
 h2 {
     font-family: 'Retron2000';
     color: white;
     margin: 0px;
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 4rem);;
     text-shadow: 0.2rem 0.2rem rgb(137, 99, 240);
     cursor: default;
     text-align: center;
@@ -105,7 +104,50 @@ h3 {
     font-family: 'Retron2000';
     color: white;
     margin: 0px;
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     text-shadow: 0.2rem 0.2rem rgb(137, 99, 240);
     cursor: default;
+    text-wrap: initial;
+}
+p {
+    font-family: 'Retron2000';
+    color: white;
+    margin-block: 10px;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    cursor: default;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+a h3 {
+    cursor: pointer;
+}
+.entry_image {
+    filter: drop-shadow(0.2rem 0.2rem rgb(107, 63, 226)) drop-shadow(0.2rem 0.2rem 10px #000000);
+    margin: 2%;
+}
+#economy_atm {
+    width: 40%;
+    translate: 10% 0;
+}
+#economy_terminal {
+    width: 40%;
+    float: right;
+    translate: -10% 35%;
+}
+#chemistry_mask {
+    width: 40%;
+    translate: 10% 0;
+}
+#chemistry_centrifuge {
+    width: 40%;
+    float: right;
+    translate: -10% 0;
+}
+#wizard_tower {
+    width: 95%;
+}
+#frostpeak_slopes {
+    width: 95%;
 }
