@@ -27,7 +27,6 @@ body {
     border-radius: 50px;
 }
 #header {
-    background-color: #1f1f1f;
     padding-bottom: 30px;
     margin-block: 50px;
     border-radius: 5px;
@@ -91,6 +90,13 @@ body {
     padding-bottom: 5px;
     border-bottom: solid 5px rgb(107, 63, 226);
 }
+.link {
+    background-color: rgb(24, 24, 24);
+    border-radius: 7px;
+    padding: 0.5vw;
+    margin-top: 10px;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.356);
+}
 h2 {
     font-family: 'Retron2000';
     color: white;
@@ -123,9 +129,35 @@ a {
 a h3 {
     cursor: pointer;
 }
+.unreleased {
+    font-family: 'Retron2000';
+    color: white;
+    float: right;
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.575);
+    cursor: default;
+    text-wrap: initial;
+    background-color: rgb(107, 63, 226);
+    padding-inline: 2%;
+    padding-block: 1%;
+    border-radius: 50px;
+}
 .entry_image {
     filter: drop-shadow(0.2rem 0.2rem rgb(107, 63, 226)) drop-shadow(0.2rem 0.2rem 10px #000000);
     margin: 2%;
+}
+.model_image {
+    filter: drop-shadow(0.2rem 0.2rem rgb(107, 63, 226)) drop-shadow(0.2rem 0.2rem 10px #000000);
+    margin: 10%;
+    width: 80%;
+}
+#snow_sled {
+    width: 50%;
+    translate: 5% 0;
+}
+#snow_mug {
+    width: 30%;
+    translate: 15% -10%;
 }
 #economy_atm {
     width: 40%;
