@@ -151,6 +151,15 @@ a h3 {
     margin: 10%;
     width: 80%;
 }
+#about {
+    flex: 2;
+}
+p img {
+    width: clamp(0.8rem, 1.2vw, 2rem);
+    margin-right: 2%;
+    position: relative;
+    top: clamp(0px, 0.1vw, 1.2rem);
+}
 #snow_sled {
     width: 50%;
     translate: 5% 0;
