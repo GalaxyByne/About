@@ -110,7 +110,7 @@ h3 {
     font-family: 'Retron2000';
     color: white;
     margin: 0px;
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
     text-shadow: 0.2rem 0.2rem rgb(137, 99, 240);
     cursor: default;
     text-wrap: initial;
@@ -191,4 +191,35 @@ p img {
 }
 #frostpeak_slopes {
     width: 95%;
+}
+.marquee_container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    border: solid 3px rgb(107, 63, 226);
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.356);
+}
+.marquee_content {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+}
+.marquee_content span {
+    font-family: 'Retron2000';
+    color: white;
+    font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+    padding-right: 2rem;
+    text-transform: uppercase;
+    cursor: default;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
